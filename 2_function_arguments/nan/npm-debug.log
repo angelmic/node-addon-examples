@@ -1,0 +1,341 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/digbil/.nvm/versions/io.js/v1.2.0/bin/iojs',
+1 verbose cli   '/home/digbil/.nvm/versions/io.js/v1.2.0/bin/npm',
+1 verbose cli   'i' ]
+2 info using npm@2.5.1
+3 info using node@v1.2.0
+4 verbose install where, deps [ '/home/digbil/nan/node-addon-examples/2_function_arguments/nan',
+4 verbose install   [ 'bindings', 'nan' ] ]
+5 verbose install where, peers [ '/home/digbil/nan/node-addon-examples/2_function_arguments/nan',
+5 verbose install   [] ]
+6 info preinstall function_arguments@0.0.0
+7 silly cache add args [ 'bindings@~1.2.1', null ]
+8 verbose cache add spec bindings@~1.2.1
+9 silly cache add args [ 'nan@~1.3.0', null ]
+10 verbose cache add spec nan@~1.3.0
+11 silly cache add parsed spec { raw: 'bindings@~1.2.1',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'bindings',
+11 silly cache add   rawSpec: '~1.2.1',
+11 silly cache add   spec: '>=1.2.1 <1.3.0',
+11 silly cache add   type: 'range' }
+12 verbose addNamed bindings@>=1.2.1 <1.3.0
+13 silly addNamed semver.valid null
+14 silly addNamed semver.validRange >=1.2.1 <1.3.0
+15 silly addNameRange { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: false }
+16 silly mapToRegistry name bindings
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/bindings
+20 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+21 silly cache add parsed spec { raw: 'nan@~1.3.0',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'nan',
+21 silly cache add   rawSpec: '~1.3.0',
+21 silly cache add   spec: '>=1.3.0 <1.4.0',
+21 silly cache add   type: 'range' }
+22 verbose addNamed nan@>=1.3.0 <1.4.0
+23 silly addNamed semver.valid null
+24 silly addNamed semver.validRange >=1.3.0 <1.4.0
+25 silly addNameRange { name: 'nan', range: '>=1.3.0 <1.4.0', hasData: false }
+26 silly mapToRegistry name nan
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry uri https://registry.npmjs.org/nan
+30 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+31 verbose request uri https://registry.npmjs.org/nan
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 17:27:06
+34 verbose request id 7b68ed4598a97ce9
+35 verbose etag "8OKNOQTK5I3E2DYN4ME7PZ551"
+36 http request GET https://registry.npmjs.org/nan
+37 verbose request uri https://registry.npmjs.org/bindings
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 17:27:06
+40 verbose etag "ADMJ9SS6EQD8EASND8DTMLB6V"
+41 http request GET https://registry.npmjs.org/bindings
+42 http 304 https://registry.npmjs.org/bindings
+43 silly get cb [ 304,
+43 silly get   { date: 'Wed, 03 Jun 2015 09:27:06 GMT',
+43 silly get     via: '1.1 varnish',
+43 silly get     'cache-control': 'max-age=60',
+43 silly get     etag: '"ADMJ9SS6EQD8EASND8DTMLB6V"',
+43 silly get     age: '31',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-served-by': 'cache-nrt6127-NRT',
+43 silly get     'x-cache': 'HIT',
+43 silly get     'x-cache-hits': '1',
+43 silly get     'x-timer': 'S1433323626.970542,VS0,VE1',
+43 silly get     vary: 'Accept' } ]
+44 verbose etag https://registry.npmjs.org/bindings from cache
+45 verbose get saving bindings to /home/digbil/.npm/registry.npmjs.org/bindings/.cache.json
+46 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: true }
+47 silly addNameRange versions [ 'bindings',
+47 silly addNameRange   [ '0.0.1',
+47 silly addNameRange     '0.1.0',
+47 silly addNameRange     '0.1.1',
+47 silly addNameRange     '0.2.0',
+47 silly addNameRange     '0.2.1',
+47 silly addNameRange     '0.2.2',
+47 silly addNameRange     '0.2.3',
+47 silly addNameRange     '0.2.4',
+47 silly addNameRange     '0.3.0',
+47 silly addNameRange     '0.4.0',
+47 silly addNameRange     '1.0.0',
+47 silly addNameRange     '1.1.0',
+47 silly addNameRange     '1.1.1',
+47 silly addNameRange     '1.2.0',
+47 silly addNameRange     '1.2.1' ] ]
+48 verbose addNamed bindings@1.2.1
+49 silly addNamed semver.valid 1.2.1
+50 silly addNamed semver.validRange 1.2.1
+51 silly cache afterAdd bindings@1.2.1
+52 verbose afterAdd /home/digbil/.npm/bindings/1.2.1/package/package.json not in flight; writing
+53 verbose afterAdd /home/digbil/.npm/bindings/1.2.1/package/package.json written
+54 http 200 https://registry.npmjs.org/nan
+55 silly get cb [ 200,
+55 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+55 silly get     etag: '"9D70CGL7I2GVSPGK48NI768U9"',
+55 silly get     'content-type': 'application/json',
+55 silly get     'cache-control': 'max-age=60',
+55 silly get     'content-length': '109590',
+55 silly get     'accept-ranges': 'bytes',
+55 silly get     date: 'Wed, 03 Jun 2015 09:27:06 GMT',
+55 silly get     via: '1.1 varnish',
+55 silly get     age: '31',
+55 silly get     connection: 'keep-alive',
+55 silly get     'x-served-by': 'cache-nrt6128-NRT',
+55 silly get     'x-cache': 'HIT',
+55 silly get     'x-cache-hits': '2',
+55 silly get     'x-timer': 'S1433323626.977609,VS0,VE0',
+55 silly get     vary: 'Accept' } ]
+56 verbose get saving nan to /home/digbil/.npm/registry.npmjs.org/nan/.cache.json
+57 silly addNameRange number 2 { name: 'nan', range: '>=1.3.0 <1.4.0', hasData: true }
+58 silly addNameRange versions [ 'nan',
+58 silly addNameRange   [ '0.3.0-wip',
+58 silly addNameRange     '0.3.0-wip2',
+58 silly addNameRange     '0.3.0',
+58 silly addNameRange     '0.3.1',
+58 silly addNameRange     '0.3.2',
+58 silly addNameRange     '0.4.0',
+58 silly addNameRange     '0.4.1',
+58 silly addNameRange     '0.4.2',
+58 silly addNameRange     '0.4.3',
+58 silly addNameRange     '0.4.4',
+58 silly addNameRange     '0.5.0',
+58 silly addNameRange     '0.5.1',
+58 silly addNameRange     '0.5.2',
+58 silly addNameRange     '0.6.0',
+58 silly addNameRange     '0.7.0',
+58 silly addNameRange     '0.7.1',
+58 silly addNameRange     '0.8.0',
+58 silly addNameRange     '1.0.0',
+58 silly addNameRange     '1.1.0',
+58 silly addNameRange     '1.1.1',
+58 silly addNameRange     '1.1.2',
+58 silly addNameRange     '1.2.0',
+58 silly addNameRange     '1.3.0',
+58 silly addNameRange     '1.4.0',
+58 silly addNameRange     '1.4.1',
+58 silly addNameRange     '1.5.0',
+58 silly addNameRange     '1.4.2',
+58 silly addNameRange     '1.4.3',
+58 silly addNameRange     '1.5.1',
+58 silly addNameRange     '1.5.2',
+58 silly addNameRange     '1.6.0',
+58 silly addNameRange     '1.5.3',
+58 silly addNameRange     '1.6.1',
+58 silly addNameRange     '1.6.2',
+58 silly addNameRange     '1.7.0',
+58 silly addNameRange     '1.8.0',
+58 silly addNameRange     '1.8.1',
+58 silly addNameRange     '1.8.2',
+58 silly addNameRange     '1.8.3',
+58 silly addNameRange     '1.8.4' ] ]
+59 verbose addNamed nan@1.3.0
+60 silly addNamed semver.valid 1.3.0
+61 silly addNamed semver.validRange 1.3.0
+62 silly mapToRegistry name nan
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/nan
+66 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-1.3.0.tgz not in flight; adding
+67 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.3.0.tgz',
+67 verbose addRemoteTarball   '9a5b8d5ef97a10df3050e59b2c362d3baf779742' ]
+68 info retry fetch attempt 1 at 17:27:07
+69 info attempt registry request try #1 at 17:27:07
+70 http fetch GET https://registry.npmjs.org/nan/-/nan-1.3.0.tgz
+71 http fetch 200 https://registry.npmjs.org/nan/-/nan-1.3.0.tgz
+72 silly fetchAndShaCheck shasum 9a5b8d5ef97a10df3050e59b2c362d3baf779742
+73 verbose addTmpTarball /tmp/npm-1945-6bbd11ac/registry.npmjs.org/nan/-/nan-1.3.0.tgz not in flight; adding
+74 verbose addTmpTarball already have metadata; skipping unpack for nan@1.3.0
+75 silly cache afterAdd nan@1.3.0
+76 verbose afterAdd /home/digbil/.npm/nan/1.3.0/package/package.json not in flight; writing
+77 verbose afterAdd /home/digbil/.npm/nan/1.3.0/package/package.json written
+78 silly install resolved [ { name: 'bindings',
+78 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+78 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+78 silly install resolved     version: '1.2.1',
+78 silly install resolved     author:
+78 silly install resolved      { name: 'Nathan Rajlich',
+78 silly install resolved        email: 'nathan@tootallnate.net',
+78 silly install resolved        url: 'http://tootallnate.net' },
+78 silly install resolved     repository:
+78 silly install resolved      { type: 'git',
+78 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+78 silly install resolved     main: './bindings.js',
+78 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+78 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+78 silly install resolved     license: 'MIT',
+78 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+78 silly install resolved     _id: 'bindings@1.2.1',
+78 silly install resolved     scripts: {},
+78 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+78 silly install resolved     _from: 'bindings@>=1.2.1 <1.3.0',
+78 silly install resolved     _npmVersion: '1.4.14',
+78 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+78 silly install resolved     maintainers: [ [Object], [Object] ],
+78 silly install resolved     dist:
+78 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+78 silly install resolved        tarball: 'http://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+78 silly install resolved     directories: {},
+78 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+78 silly install resolved     readme: 'ERROR: No README data found!' },
+78 silly install resolved   { name: 'nan',
+78 silly install resolved     version: '1.3.0',
+78 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+78 silly install resolved     main: 'include_dirs.js',
+78 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+78 silly install resolved     scripts:
+78 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+78 silly install resolved        'rebuild-tests': 'node-gyp rebuild --directory test' },
+78 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+78 silly install resolved     devDependencies:
+78 silly install resolved      { bindings: '~1.2.1',
+78 silly install resolved        'node-gyp': '~1.0.1',
+78 silly install resolved        tap: '~0.4.12',
+78 silly install resolved        xtend: '~4.0.0' },
+78 silly install resolved     license: 'MIT',
+78 silly install resolved     gitHead: 'e482fbe142e58373d5a24f4e5a60c61e22a13f83',
+78 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+78 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+78 silly install resolved     _id: 'nan@1.3.0',
+78 silly install resolved     _shasum: '9a5b8d5ef97a10df3050e59b2c362d3baf779742',
+78 silly install resolved     _from: 'nan@>=1.3.0 <1.4.0',
+78 silly install resolved     _npmVersion: '1.4.21',
+78 silly install resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+78 silly install resolved     maintainers: [ [Object] ],
+78 silly install resolved     dist:
+78 silly install resolved      { shasum: '9a5b8d5ef97a10df3050e59b2c362d3baf779742',
+78 silly install resolved        tarball: 'http://registry.npmjs.org/nan/-/nan-1.3.0.tgz' },
+78 silly install resolved     directories: {},
+78 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.3.0.tgz' } ]
+79 info install bindings@1.2.1 into /home/digbil/nan/node-addon-examples/2_function_arguments/nan
+80 info install nan@1.3.0 into /home/digbil/nan/node-addon-examples/2_function_arguments/nan
+81 info installOne bindings@1.2.1
+82 verbose installOne of bindings to /home/digbil/nan/node-addon-examples/2_function_arguments/nan not in flight; installing
+83 info installOne nan@1.3.0
+84 verbose installOne of nan to /home/digbil/nan/node-addon-examples/2_function_arguments/nan not in flight; installing
+85 verbose lock using /home/digbil/.npm/_locks/bindings-5db11edd712f848a.lock for /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+86 verbose lock using /home/digbil/.npm/_locks/nan-e1dbddee093ec442.lock for /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+87 silly install write writing bindings 1.2.1 to /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+88 silly cache addNamed cb bindings@1.2.1
+89 verbose unbuild node_modules/bindings
+90 silly install write writing nan 1.3.0 to /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+91 verbose gentlyRm vacuuming /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+92 verbose tar unpack /home/digbil/.npm/bindings/1.2.1/package.tgz
+93 verbose tar unpacking to /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+94 verbose gentlyRm vacuuming /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+95 silly gunzTarPerm modes [ '775', '664' ]
+96 silly cache addNamed cb nan@1.3.0
+97 verbose unbuild node_modules/nan
+98 verbose gentlyRm vacuuming /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+99 verbose tar unpack /home/digbil/.npm/nan/1.3.0/package.tgz
+100 verbose tar unpacking to /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+101 verbose gentlyRm vacuuming /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+102 silly gunzTarPerm extractEntry package.json
+103 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+104 silly gunzTarPerm modes [ '775', '664' ]
+105 silly gunzTarPerm extractEntry README.md
+106 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+107 silly gunzTarPerm extractEntry bindings.js
+108 silly gunzTarPerm modified mode [ 'bindings.js', 420, 436 ]
+109 silly gunzTarPerm extractEntry package.json
+110 silly gunzTarPerm extractEntry README.md
+111 silly gunzTarPerm extractEntry LICENSE
+112 silly gunzTarPerm extractEntry include_dirs.js
+113 silly gunzTarPerm extractEntry CHANGELOG.md
+114 silly gunzTarPerm extractEntry .dntrc
+115 silly gunzTarPerm extractEntry nan.h
+116 info preinstall bindings@1.2.1
+117 silly install resolved []
+118 verbose about to build /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+119 info build /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+120 verbose linkStuff [ false,
+120 verbose linkStuff   false,
+120 verbose linkStuff   false,
+120 verbose linkStuff   '/home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules' ]
+121 info linkStuff bindings@1.2.1
+122 verbose linkBins bindings@1.2.1
+123 verbose linkMans bindings@1.2.1
+124 verbose rebuildBundles bindings@1.2.1
+125 info install bindings@1.2.1
+126 info postinstall bindings@1.2.1
+127 verbose unlock done using /home/digbil/.npm/_locks/bindings-5db11edd712f848a.lock for /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/bindings
+128 silly gunzTarPerm extractEntry appveyor.yml
+129 info preinstall nan@1.3.0
+130 silly install resolved []
+131 verbose about to build /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+132 info build /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+133 verbose linkStuff [ false,
+133 verbose linkStuff   false,
+133 verbose linkStuff   false,
+133 verbose linkStuff   '/home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules' ]
+134 info linkStuff nan@1.3.0
+135 verbose linkBins nan@1.3.0
+136 verbose linkMans nan@1.3.0
+137 verbose rebuildBundles nan@1.3.0
+138 info install nan@1.3.0
+139 info postinstall nan@1.3.0
+140 verbose unlock done using /home/digbil/.npm/_locks/nan-e1dbddee093ec442.lock for /home/digbil/nan/node-addon-examples/2_function_arguments/nan/node_modules/nan
+141 info build /home/digbil/nan/node-addon-examples/2_function_arguments/nan
+142 verbose linkStuff [ false,
+142 verbose linkStuff   false,
+142 verbose linkStuff   false,
+142 verbose linkStuff   '/home/digbil/nan/node-addon-examples/2_function_arguments' ]
+143 info linkStuff function_arguments@0.0.0
+144 verbose linkBins function_arguments@0.0.0
+145 verbose linkMans function_arguments@0.0.0
+146 verbose rebuildBundles function_arguments@0.0.0
+147 verbose rebuildBundles [ 'bindings', 'nan' ]
+148 info install function_arguments@0.0.0
+149 verbose unsafe-perm in lifecycle true
+150 info function_arguments@0.0.0 Failed to exec install script
+151 verbose stack Error: function_arguments@0.0.0 install: `node-gyp rebuild`
+151 verbose stack Exit status 1
+151 verbose stack     at EventEmitter.<anonymous> (/home/digbil/.nvm/versions/io.js/v1.2.0/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+151 verbose stack     at emitTwo (events.js:85:13)
+151 verbose stack     at EventEmitter.emit (events.js:153:7)
+151 verbose stack     at ChildProcess.<anonymous> (/home/digbil/.nvm/versions/io.js/v1.2.0/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+151 verbose stack     at emitTwo (events.js:85:13)
+151 verbose stack     at ChildProcess.emit (events.js:153:7)
+151 verbose stack     at maybeClose (child_process.js:984:16)
+151 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1057:5)
+152 verbose pkgid function_arguments@0.0.0
+153 verbose cwd /home/digbil/nan/node-addon-examples/2_function_arguments/nan
+154 error Linux 3.13.0-32-generic
+155 error argv "/home/digbil/.nvm/versions/io.js/v1.2.0/bin/iojs" "/home/digbil/.nvm/versions/io.js/v1.2.0/bin/npm" "i"
+156 error node v1.2.0
+157 error npm  v2.5.1
+158 error code ELIFECYCLE
+159 error function_arguments@0.0.0 install: `node-gyp rebuild`
+159 error Exit status 1
+160 error Failed at the function_arguments@0.0.0 install script 'node-gyp rebuild'.
+160 error This is most likely a problem with the function_arguments package,
+160 error not with npm itself.
+160 error Tell the author that this fails on your system:
+160 error     node-gyp rebuild
+160 error You can get their info via:
+160 error     npm owner ls function_arguments
+160 error There is likely additional logging output above.
+161 verbose exit [ 1, true ]
