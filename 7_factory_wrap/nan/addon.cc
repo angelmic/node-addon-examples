@@ -3,18 +3,20 @@
 
 using namespace v8;
 
-NAN_METHOD(CreateObject) {
-  NanScope();
-  NanReturnValue(MyObject::NewInstance(args[0]));
+NAN_METHOD(CreateObject) 
+{
+    NanScope();
+    NanReturnValue(MyObject::NewInstance(args[0]));
 }
 
-void InitAll(Handle<Object> exports, Handle<Object> module) {
-  NanScope();
+void InitAll(Handle<Object> exports, Handle<Object> module) 
+{
+    NanScope();
 
-  MyObject::Init();
+    MyObject::Init();
 
-  module->Set(NanNew("exports"),
-      NanNew<FunctionTemplate>(CreateObject)->GetFunction());
+    //module->Set(NanNew("exports"), NanNew<FunctionTemplate>(CreateObject)->GetFunction());
+    NODE_SET_METHOD(module, "exports", CreateObject);
 }
 
 NODE_MODULE(addon, InitAll)

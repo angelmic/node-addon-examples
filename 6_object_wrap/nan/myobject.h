@@ -3,18 +3,25 @@
 
 #include <nan.h>
 
-class MyObject : public node::ObjectWrap {
- public:
-  static void Init(v8::Handle<v8::Object> exports);
+#define dlog(fmt, arg...) printf("%s(%d): " fmt, __func__, __LINE__, ##arg)
 
- private:
-  explicit MyObject(double value = 0);
-  ~MyObject();
+class MyObject : public node::ObjectWrap 
+{
+    public:
+        static void Init(v8::Handle<v8::Object> exports);
 
-  static NAN_METHOD(New);
-  static NAN_METHOD(PlusOne);
-  static v8::Persistent<v8::Function> constructor;
-  double value_;
+    private:
+        explicit MyObject(double value = 0);
+        ~MyObject();
+
+        static NAN_METHOD(NewGG);
+
+        static NAN_METHOD(PlusOne);
+
+    private:
+        static v8::Persistent<v8::Function>     constructor;
+        double                                  m_value;
+
 };
 
 #endif
